@@ -1,38 +1,367 @@
-.App {
-  text-align: center;
+@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }
+
+html {
+    min-height: 100%;
+    background-color: #D3D3D3;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+    display: block;
+}
+.header {
+    font-family: Merienda One,cursive;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-header {
+    background: #e0d9e7c5;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shoes {
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    color: #500619;
+    font-size: 200%;
+    font-variant: small-caps;
+    margin: 20px;
+    text-shadow: 2px 4px 8px #fff;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+    height: 60px;
+    left: 30px;
+    position: absolute;
 }
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-cart {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    border-bottom: 3px solid #6f2f40;
+    color: #000;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+.nav-link {
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    color: #000;
+    font-variant: small-caps;
+    margin: 0 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hvr-underline-from-center {
+    box-shadow: 0 0 1px transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    vertical-align: middle;
+}
+
+a:-webkit-any-link {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.hvr-underline-from-center:before {
+    background: #5d0137;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 51%;
+    position: absolute;
+    right: 51%;
+    transition-duration: .3s;
+    transition-property: left,right;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+@media (max-width: 800px){
+
+}
+.banner {
+    height: 50vh;
+}
+@media (max-width: 1000px){
+
+}
+.banner {
+    height: 50vh;
+}
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(https://file.hstatic.net/1000282067/file/9_banner_nike_ebc23a47aab94b38a0b8e9d84915dd91_2048x2048.jpg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px hsl(0deg 8% 5% / 53%);
+    height: 100vh;
+    margin: 1rem;
+}
+
+@media (max-width: 700px){
+
+}
+.tagline {
+    font-size: 50px;
+}
+.tagline {
+    color: #5d0137;
+    display: block;
+    font-family: Acme,sans-serif;
+    font-size: 70px;
+    margin-top: 50px;
+    text-shadow: 2px 4px 2px #e7d8e1;
+}
+
+@media (max-width: 700px){
+
+}
+.tagline-para {
+    font-size: 20px;
+}
+.tagline-para {
+    color: #0c0b0bfd;
+    display: flex;
+    font-family: Karla,sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.latest-header {
+    margin: 10px;
+}
+
+.line {
+    display: inline-block;
+    width: 20%;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.latest-designs {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+@media (max-width: 700px){
+
+}
+.home-products {
+    font-size: 70%;
+    height: 150px;
+    width: 200px;
+}
+.home-products {
+    background: #fff;
+    border: 1px solid hsla(0,0%,50%,.24);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px grey;
+    font-size: 100%;
+    height: 250px;
+    margin: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 270px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+
+}
+.products-shoe-image {
+    height: 80px;
+}
+.products-shoe-image {
+    height: 150px;
+}
+
+.wrapper {
+    height: 45vh;
+}
+
+.footer, .footer .footer-content {
+    display: flex;
+}
+.footer {
+    align-items: center;
+    border-top: 1px solid #000;
+    bottom: 0;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.my-name {
+    color: #6b196b;
+    text-shadow: 2px 2px 2px #f3dede;
+}
+
+@media (max-width: 700px){
+
+}
+.footer-container, .footer-para, .my-name {
+    font-size: 20px;
+}
+.footer-para {
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    color: #17161850;
+    font-size: large;
+    font-variant: small-caps;
+    margin: 10px 0;
+    text-shadow: 0 0 1px #000;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: #706060;
+    display: inline-block;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    width: 2rem;
+}
+.footer-section {
+    text-align: center;
+}
+
+@media (max-width: 700px){
+
+}
+.socials {
+    font-size: 16px;
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-linkedin:before {
+    content: "\f08c";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-github:before {
+    content: "\f09b";
+}
+.copyright {
+    color: #1f1414;
+    font-family: PT Sans Narrow,sans-serif;
+    font-size: 1rem;
+}
+
+.product-container h3 {
+    font-size: 98%;
+}
+@media (max-width: 700px){
+
+}
+.shoe-name {
+    font-size: 12px;
+}
+.shoe-name {
+    color: #5d0137;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.product-container h3 {
+    font-size: 98%;
+}
+@media (max-width: 700px){
+
+}
+.shoe-price {
+    font-size: 14px;
+}
+.shoe-price {
+    color: #606e60;
+    text-shadow: 1px 1px 1px #000;
+}
+
